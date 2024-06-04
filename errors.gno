@@ -1,4 +1,4 @@
-package zentasktic_project
+package zentasktic_user
 
 import "errors"
 

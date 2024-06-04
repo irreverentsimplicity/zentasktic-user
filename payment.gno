@@ -13,7 +13,7 @@ type Payment struct {
     ObjectId 		string `json:"objectId"`
     ObjectType      string `json:"objectType"`
 	Amount  		std.Coins `json:"paymentAmount"`
-    Status			string `json:"paymentStatus"`            // invoices / paid, etc
+    Status			string `json:"paymentStatus"`            // invoiced / paid, etc
 }
 
 var (
