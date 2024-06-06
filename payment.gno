@@ -115,7 +115,7 @@ func GetTotalPayments() (totalAmount std.Coins, err error){
 		// Iterate over the Payments AVL tree 
 		Payments.Iterate("", "", func(key string, value interface{}) bool {
 				if paymentsItem, ok := value.(Payment); ok {
-						total = total.Add(payment.Amount)
+						total = total.Add(paymentsItem.Amount)
 				}
 				return false // Continue iteration until all nodes have been visited.
 		})
